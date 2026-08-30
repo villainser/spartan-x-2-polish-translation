@@ -1,0 +1,11 @@
+# Commercial game images and emulator state
+*.nes
+*.fds
+*.unf
+*.unif
+*.state
+*.state[0-9]*
+
+# Local build output
+/dist/
+__pycache__/

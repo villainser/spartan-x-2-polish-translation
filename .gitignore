@@ -5,6 +5,9 @@
 *.unif
 *.state
 *.state[0-9]*
+*.mss
+*.sav
+*.srm
 
 # Local build output
 /dist/

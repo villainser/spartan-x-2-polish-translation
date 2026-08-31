@@ -1,11 +1,42 @@
-# Spartan X 2 — Polish Translation v1.0
+# Spartan X 2 — Polish Translation v1.1
 
-First public release of the Polish translation for the Japanese Famicom version of *Spartan X 2*.
+Release v1.1 adds complete Dendy and PAL editions alongside the existing NTSC
+translation. All three IPS patches use the same clean Japanese ROM as their
+source. No ROM image is included.
 
-The release archive contains the IPS patch, a source-checking application script, and the checksums needed to identify the correct No-Intro ROM and verify the output. It does not contain a ROM image.
+## What changed
 
-Archive SHA-256: `694066c8919c90218cd83cfa8f4f6b6689f7caa8f57dd01456b70f8b1cb4ebc1`
+- Added a Dendy build with native 50 Hz audio and Dendy CPU timing.
+- Added a PAL build with native PAL 50 Hz timing.
+- Corrected the cadence-dependent transition deadlock that could stop the game
+  while Spartan entered the train.
+- Gated subsequent synthetic 50 Hz gameplay ticks while a transition or
+  published PPU-queue state is active.
+- Extended `apply_patch.py` with explicit `ntsc`, `dendy` and `pal` selection,
+  per-variant IPS/output authentication, and strict regional header checks.
+- Added complete patch coordinates and checksums to `PATCH_MANIFEST.json`.
 
-Use the clean Japanese ROM with SHA-256 `386dd9ba05980b8097dcb6289519ef22cbf41d25dab24289e504bbea2c35f665`. Run the patched game in NTSC or Famicom mode; PAL and Dendy timing modes are not supported.
+The NTSC output is unchanged from v1.0 and remains byte-identical with SHA-256
+`0ff1f7a035b845fa853f3f4c14d0305b9c5bf3d3e1aaf894d9dc297631e89ae0`.
 
-RetroAchievements compatibility testing is still pending. The output hash has not yet been linked to the existing achievement set.
+## Validation
+
+Each serialized IPS was applied to a fresh copy of the required source ROM and
+reproduced its validated output byte-for-byte. The Dendy and PAL editions were
+both played from the start through the ending on an R36 Plus with matching
+region settings. The complete playthroughs covered the train transition,
+results screens and every stage without the previous freeze or recurring
+graphic corruption.
+
+Required source:
+
+```text
+Size:    262160 bytes
+SHA-256: 386dd9ba05980b8097dcb6289519ef22cbf41d25dab24289e504bbea2c35f665
+```
+
+Release archive SHA-256:
+`09d332f881848de13c4574f8b864cac76568d746e6d4881f85253ecfb078eaa9`
+
+Use the ROM variant that matches the selected emulator region. Save states are
+not intended to be moved between variants.

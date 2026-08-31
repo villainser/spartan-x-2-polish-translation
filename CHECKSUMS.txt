@@ -1,0 +1,14 @@
+SHA-256 checksums
+
+Required source (not included):
+386dd9ba05980b8097dcb6289519ef22cbf41d25dab24289e504bbea2c35f665  Spartan X 2 (Japan).nes
+
+Included patches:
+b4595d124464afea49ad2c1af0f3487758e719c9bbf0781af9fa6eb4c980c3ed  Spartan X 2 (Japan) (Pl) (v1.0) (villainser).ips
+008a5b15cec2e8ca49d933cc53ddcf244f68c4d05f146de9cee1fa649c5d6cdf  Spartan X 2 (Japan) (Pl) (v1.0) (villainser) [Dendy 50Hz].ips
+54f63cda530f7f47703c336d145265b6d3343de7b19974ad0010919d93bbd899  Spartan X 2 (Japan) (Pl) (v1.0) (villainser) [PAL 50Hz].ips
+
+Expected outputs (not included):
+0ff1f7a035b845fa853f3f4c14d0305b9c5bf3d3e1aaf894d9dc297631e89ae0  Spartan X 2 (Polish v1.0) [NTSC].nes
+8e6013b39b053cda73a02f06340147a7e9e2dc05c375f81e4d15219cd6df27dc  Spartan X 2 (Polish v1.0) [Dendy 50Hz].nes
+6d4c7ad650f0bce376291defd9609df103fa9db0e9bd897771bc095e6a02b866  Spartan X 2 (Polish v1.0) [PAL 50Hz].nes

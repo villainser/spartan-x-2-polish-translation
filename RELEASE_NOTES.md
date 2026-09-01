@@ -19,16 +19,7 @@ source. No ROM image is included.
 The NTSC output is unchanged from v1.0 and remains byte-identical with SHA-256
 `0ff1f7a035b845fa853f3f4c14d0305b9c5bf3d3e1aaf894d9dc297631e89ae0`.
 
-## Validation
-
-Each serialized IPS was applied to a fresh copy of the required source ROM and
-reproduced its validated output byte-for-byte. The Dendy and PAL editions were
-both played from the start through the ending on an R36 Plus with matching
-region settings. The complete playthroughs covered the train transition,
-results screens and every stage without the previous freeze or recurring
-graphic corruption.
-
-Required source:
+## Required source
 
 ```text
 Size:    262160 bytes

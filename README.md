@@ -84,14 +84,7 @@ patcher.
 | PAL | 10796 bytes | `54f63cda530f7f47703c336d145265b6d3343de7b19974ad0010919d93bbd899` | `6d4c7ad650f0bce376291defd9609df103fa9db0e9bd897771bc095e6a02b866` |
 
 The NTSC output is byte-identical to v1.0. The Dendy and PAL variants use NES
-2.0 timing headers and region-specific 50 Hz scheduling. Each serialized IPS
-was reapplied to a fresh copy of the required source and reproduced its
-validated output byte-for-byte.
-
-Both 50 Hz variants were played from the start through the ending on an R36
-Plus using their matching region settings. The complete playthroughs included
-the train transition, every results screen and all later stages without the
-previous freeze or recurring graphic corruption.
+2.0 timing headers and region-specific 50 Hz scheduling.
 
 Additional MD5, CRC32, SHA-1, headerless MD5 and ordered patch records are in
 `PATCH_MANIFEST.json`.
